@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Estacionamento</title>
+      <link rel="stylesheet" href="vaga.css">
+     
+   </head>
+   <body onload="listaVeiculo()">
+      <div class="wrapper">
+         <header>
+            <nav>
+               <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x"></i>
+               </div>
+               <div class="logo">
+                  <marquee direction="left" scrollamount="2">MILAN</marquee>
+               </div>
+               <div class="menu">
+                  <ul>
+                     <li><a href="../index.html" title="Home">Pagina inicial</a></li>
+                     <li><a href="estacionamento.html" title="Estacionamento">Vagas</a></li>
+                     <li><a href="cubo.html" title="Cubo">Cubo</a></li>
+                     <li><a href="contato.html" title="Contato">Contato</a></li>
+                     <li><a href="localizacao.html" title="Localização">Localização</a></li>
+                  </ul>
+               </div>
+            </nav>
+            <br></br>
+            <br></br>
+            <br></br>
+            <table>
+               <thead>
+                   <tr>
+                       <th colspan="8">Gerenciar Veículo</th>
+                   </tr>
+                   <tr>
+                       <th>Id</th>
+                       <th>Tipo</th>
+                       <th>Placa</th>
+                       <th>Entrada</th>
+                       <th>Saída</th>
+                       <th>Valor</th>
+                       <th>Data</th>
+                   </tr>
+               </thead>
+               <tbody id="registro">
+               </tbody>
+               <tfoot >
+                   <tr>
+                       <form>
+                           <td><input type="number" placeholder="Id" id="id_registro" disabled=""></td>
+                           <td><select id="tipo">
+                              <option value="moto">Moto</option>
+                              <option value="carro">Carro</option>
+                          </select></td>
+                           <td><input type="text" placeholder="Placa" id="placa"></td>
+                           <td><input type="time" placeholder="Entrada" id="entrada"></td>
+                           <td><input type="time" placeholder="Saida" id="saida"></td>
+                           <td><input type="number" placeholder="R$" id="valor"></td>
+                           <td><input type="date" placeholder="Data" id="data_registro"></td>
+                           
+                           <td><button type="submit" value="Criar" onclick="criaVeiculo()"></button></td>
+                       </form>
+                   </tr>
+               </tfoot>
+               <div class="msg">
+                  <p id="mensagem">Mensagens do Sistema</p>
+              </div>
+           </table>
+           <div class="marquee1">
+            <marquee direction="right" scrollamount="25" z-index="0"><img src="../img/moto.gif" /></marquee>
+         </div>
+         </header>
+      <div class="marquee">
+         <img src="../img/fast.gif">
+      </div>
+         <script src="main.js"></script>
+      </body>
+</html>

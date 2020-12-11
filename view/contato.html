@@ -1,0 +1,58 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Estacionamento</title>
+      <link rel="stylesheet" href="contato.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="main.js"></script>
+   </head>
+   <body>
+      <div class="wrapper">
+         <header>
+            <nav>
+               <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x"></i>
+               </div>
+               <div class="logo">
+                  <marquee direction="left" scrollamount="2">MILAN</marquee>
+               </div>
+               <div class="menu">
+                  <ul>
+                     <li><a href="../index.html" title="Home">Pagina inicial</a></li>
+                     <li><a href="estacionamento.html" title="Estacionamento">Vagas</a></li>
+                     <li><a href="cubo.html" title="Cubo">Cubo</a></li>
+                     <li><a href="contato.html" title="Contato">Contato</a></li>
+                     <li><a href="localizacao.html" title="Localização">Localização</a></li>
+                  </ul>
+               </div>
+            </nav>
+            <div class="contato">
+            <form name="meu_form">
+
+               <h1>Entre em contato</h1>
+             
+               <input type="text" id="nomeid" placeholder="Pedro Vale" maxlength="30" required="required" name="nome" />
+               <label for="nome">Nome</label>
+             
+               <input type="tel" id="foneid" placeholder="(xx)xxxx-xxxx" name="tel" maxlength="13" />
+               <label for="fone">Telefone</label>
+             
+               <input type="email" id="emailid" placeholder="fulano@email.com" name="email" />
+               <label for="email">Email</label>
+             
+               <textarea placeholder="Deixe sua opnião"></textarea>
+             
+               <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+             </form>
+            </div>
+         </header>
+   </body>
+</html>

@@ -1,0 +1,187 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue",sans-serif;
+  font-weight: lighter;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/estacionamento.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.content {
+  width: 94%;
+  margin: 4em auto;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.logo {
+  line-height: 60px;
+  position: fixed;
+  float: left;
+  margin: 16px 46px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  line-height: 60px;
+}
+
+nav ul {
+  line-height: 60px;
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color: #b16161;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 50px;
+  transition: 1s;
+}
+
+nav.black ul {
+  background: #000;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 16px 40px;;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.menu-icon {
+  line-height: 60px;
+  width: 100%;
+  background: #000;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+@media(max-width: 786px) {
+
+  .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+  }
+
+  nav ul {
+        max-height: 0px;
+        background: #000;
+  }
+
+  nav.black ul {
+        background: #000;
+  }
+
+  .showing {
+        max-height: 34em;
+  }
+
+  nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+  }
+
+  .menu-icon {
+        display: block;
+  }
+
+}
+.local{
+  color: #fff;
+  padding: 100px;
+  padding-right: 50px; 
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  font-family: Verdana,Tahoma,sans-serif;
+  font-size: 15px;
+  /*background-color: #CC3300;*/
+  max-width: 500px;
+}
+
+h1 {
+  margin-bottom: 15px;
+  margin-left: 75px;
+  color: #ffffff;
+  /*text-shadow: 5px 5px 5px white;*/
+}
+
+input, textarea {
+  width: 250px;
+  padding: 10px;
+  color: black;
+  margin-left: 20px;
+  margin-top: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+  border-color: #4f4fab;
+  box-shadow: 5px 0px 9px #656e6d;
+  background-color: #ffffff;
+  color: #100e0e;
+  font-weight: bold;
+}
+
+.enviar {
+  background-color: #000000;
+  height: 40px;
+  width: 450px;
+  font-weight: bold;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid;
+  color: white;
+}
+
+textarea {
+  width: 400px;
+  height: 120px;
+  line-height: 20px;
+  max-width: 400px;
+}
+
+form label {
+  margin-left: 20px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.contato{
+    padding: 100px;
+}
